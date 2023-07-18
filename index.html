@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d768ca81f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="behavior.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <nav>
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <i class="fa-solid fa-a fa-lg logo"></i>
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+              <li>
+                <a href="#aboutMe">about me</a>
+              </li>
+              <li>
+                <a href="#myGoals">my goals</a>
+              </li>
+              <li><a href="./tweets.html">tweets</a></li>
+              <li class="contact"><a href="">contact me</a></li>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+              <li>
+                <a href="https://github.com/kelly9323" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nastasia.shlapak/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto: vinas98@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- end of header -->
+
+      <main id="aboutMe">
+        <!-- section About Me  -->
+        <section class="section-center">
+          <article class="main-article">
+            <h2>Hello everyone!</h2>
+            <h1>
+              I am
+              <div class="animation-text">web-developer</div>
+            </h1>
+            <p>
+              My name is Anastasiia. Passionate about mastering web development
+              and creating innovative online experiences.
+            </p>
+            <button class="contact-button"><a href="#contact-me">contact me</a></button>
+          </article>
+
+          <img
+            src="./img/myPicture.jpg"
+            alt="profile picture"
+            class="my-img"
+            id="smart_thumbnail"
+          />
+          <aside>
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://holberton-2ypajf9hfw.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </aside>
+        </section>
+        <!-- section My Goals -->
+        <section class="section-goals" id="myGoals">
+          <h2 class="goals-heading">my goals</h2>
+          <ul id="goalsContainer" class="goalsContainer">
+            <!-- <li class="goalsWrapper">
+              <article class="cardContainer">
+                <h3>My first goal</h3>
+                <img src="./img/pointillism.jpg" alt="" class="goalsPhoto" />
+                <p class="goalsDescription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione possimus laborum eaque totam accusamus, ea laudantium
+                  laboriosam culpa inventore quasi.
+                </p>
+              </article>
+            </li> -->
+          </ul>
+        </section>
+        <!-- contact me -->
+        <section class="contact-me" id="contact-me">
+          <article class="get-in-touch">
+            <h2>get in touch with me</h2>
+            <h3><i class="fa-solid fa-phone-volume"></i> Phone:</h3>
+            <a href="tel:+33767302688">+33767302688</a>
+            <h3><i class="fa-regular fa-envelope"></i> Email:</h3>
+            <a href="mailto: vinas98@gmail.com">vinas98@gmail.com</a>
+            <h3><i class="fa-brands fa-github"></i> Github:</h3>
+            <a href="https://github.com/kelly9323" target="_blank">https://github.com/kelly9323</a>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <a href="https://www.holbertonschool.fr/campus/toulouse" target="_blank"
+          ><img
+            src="https://rails-assets.holbertonschool.com/assets/logos/holberton-school-logo_tablet-1-b55436d32d8e569f25c29a7ec38a536540047d72f78e03b07366ab69c1bca1a0.png"
+            alt=""
+        /></a>
+        <p>
+          Made by Anastasiia Shlapak for
+          <a href="https://apply.holbertonschool.com" target="_blank"
+            >Holberton School</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <script src="./data.js"></script>
+    <script src="behavior.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
